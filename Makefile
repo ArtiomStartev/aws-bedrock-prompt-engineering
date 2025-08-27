@@ -12,7 +12,6 @@ help:
 	@echo "  make run         - Run the main application"
 	@echo "  make test        - Run tests (when implemented)"
 	@echo "  make check       - Check code formatting and run linter"
-	@echo "  make examples    - Run example demonstrations"
 	@echo "  make clean       - Clean build artifacts"
 	@echo "  make deps        - Update dependencies"
 
@@ -42,14 +41,6 @@ check:
 	@echo "🔍 Checking code format..."
 	go fmt ./...
 	@echo "✅ Code formatting complete"
-
-# Run example demonstrations
-examples:
-	@echo "🎯 Running Zero-Shot Demo..."
-	go run examples/interactive_demo.go
-	@echo ""
-	@echo "📊 Running Benchmark Demo..."
-	go run examples/benchmark_techniques.go
 
 # Clean build artifacts
 clean:
